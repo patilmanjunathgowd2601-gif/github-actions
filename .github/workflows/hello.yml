@@ -9,7 +9,6 @@ on:
 # Workflow jobs
 jobs:
   greet:
-
     # Runner
     runs-on: ubuntu-latest
 
@@ -20,6 +19,13 @@ jobs:
 
       - name: Say hello to username
         run: echo "hello $USER"
-       
 
+  details:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show the versions of Docker and Python
+        run: |
+          docker --version
+          python --version
         
