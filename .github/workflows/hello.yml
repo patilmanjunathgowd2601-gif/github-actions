@@ -1,0 +1,25 @@
+name: Manjunath
+
+# Runs when code is pushed to the main branch
+on:
+  push:
+    branches:
+      - main
+
+# Workflow jobs
+jobs:
+  greet:
+
+    # Runner
+    runs-on: ubuntu-latest
+
+    # Steps
+    steps:
+      - name: Say hello to users
+        run: echo "Hello Dosto"
+
+      - name: Say hello to username
+        run: echo "hello $USER"
+       
+
+        
