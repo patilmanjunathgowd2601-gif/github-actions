@@ -2,9 +2,7 @@ name: Manjunath
 
 # Runs when code is pushed to the main branch
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: 
 
 # Workflow jobs
 jobs:
