@@ -1,8 +1,8 @@
-FROM: python3.13-slim
+FROM python3.13-slim
 
-WORKDIR/ app
+WORKDIR /app
 
-COPY ..
+COPY . .
 
 RUN pip install -r requirements.txt
 
