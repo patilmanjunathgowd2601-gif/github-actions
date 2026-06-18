@@ -3,6 +3,7 @@ name: Portfolio
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   pages: write
@@ -31,6 +32,8 @@ jobs:
         # STEP 3
         - name: upload static files
           uses: actions/upload-pages-artifact@v4
+          with:
+            path: "."
 
         # Make page live
         # STEP 4
