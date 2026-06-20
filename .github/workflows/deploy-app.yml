@@ -14,5 +14,8 @@ jobs:
             - name: code checkout
               uses: actions/checkout@v4
 
+            - name: set up Docker Compose (optional, usually pre-installed on ubuntu-latest) 
+              uses: docker/setup-compose-actions@v2
+
             - name: deploy with docker compose
               run: docker compose up -d --build
