@@ -1,5 +1,5 @@
 # This will deploy the safe/ secure/ tested app to prod server
-name: Deploy to derver
+name: Deploy to server
 
 on:
     workflow_call:
