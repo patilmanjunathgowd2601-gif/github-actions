@@ -11,6 +11,11 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
+
+            - name: Set DOCKER_TAG environment variable
+              run: |
+                echo "DOCKER_TAG=${{ github.sha }}" >> GITHUB_ENV
+
               
             - name: SSH to Pro server & create app folder
               uses: appleboy/ssh-action@v1.0.3
